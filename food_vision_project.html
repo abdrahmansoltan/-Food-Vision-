@@ -14515,6 +14515,12 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://colab.research.google.com/drive/1JHZ7PQWCRoTK0KzSvCuGjgZBODsv5b9g?usp=sharing" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="%F0%9F%8D%94%F0%9F%91%81-Food-Vision%E2%84%A2">&#127828;&#128065; Food Vision&#8482;<a class="anchor-link" href="#%F0%9F%8D%94%F0%9F%91%81-Food-Vision%E2%84%A2">&#182;</a></h1><p>We're going to be building Food Vision™, using all of the data from the Food101 dataset.
 The goal is to beat the results of <a href="https://www.researchgate.net/publication/304163308_DeepFood_Deep_Learning-Based_Food_Image_Recognition_for_Computer-Aided_Dietary_Assessment">DeepFood</a>**, a 2016 paper which used a Convolutional Neural Network trained for 2-3 days to achieve 77.4% top-1 accuracy.</p>
 <blockquote><p>🔑 <strong>Note:</strong> <strong>Top-1 accuracy</strong> means "accuracy for the top softmax activation value output by the model" (because softmax ouputs a value for every class, but top-1 means only the highest one is evaluated). <strong>Top-5 accuracy</strong> means "accuracy for the top 5 softmax activation values output by the model", in other words, did the true label appear in the top 5 activation values? Top-5 accuracy scores are usually noticeably higher than top-1.</p>
@@ -14573,6 +14579,11 @@ The goal is to beat the results of <a href="https://www.researchgate.net/publica
 <p>Mixed precision training uses a combination of single precision (float32) and half-preicison (float16) data types to speed up model training (up 3x on modern GPUs).
 <a href="https://www.tensorflow.org/guide/mixed_precision">TensorFlow documentation on mixed precision</a> for more details.</p>
 <p>For mixed precision training to work, you need access to a GPU with a compute compability score of 7.0+.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -18947,8 +18958,7 @@ weighted avg       0.80      0.80      0.80     25250
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here&#39;s a codeblock just for fun. You should be able to upload an image here </span>
-<span class="c1"># and have it classified without crashing</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># codeblock for checking results to upload an image </span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">files</span>
 
